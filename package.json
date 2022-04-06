@@ -1,0 +1,33 @@
+{
+  "name": "@norathefurry/eslint-config-preset",
+  "description": "An ESLint Config Preset",
+  "license": "MIT",
+  "author": "MokiyCodes <mokiy@wafflepowered.com>",
+  "version": "0.1.0",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "types": "dist/types.d.ts",
+  "devDependencies": {
+    "@norathefurry/eslint-config": "1.1.1",
+    "@parcel/core": "^2.4.1",
+    "@parcel/packager-ts": "2.4.1",
+    "@parcel/transformer-typescript-types": "^2.4.1",
+    "eslint": "^8.12.0",
+    "parcel": "^2.4.1",
+    "typescript": ">=4.6.3"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "build": "parcel build --no-cache",
+    "start": "node .",
+    "test": "node ."
+  },
+  "packageManager": "pnpm@6.32.4",
+  "private": false,
+  "targets": {
+    "main": {
+      "includeNodeModules": []
+    }
+  }
+}
