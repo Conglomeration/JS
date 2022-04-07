@@ -1,8 +1,8 @@
 {
-  "name": "@norathefurry/eslint-config-preset",
-  "description": "An ESLint Config Preset",
+  "name": "conglomeration",
+  "description": "Conglomeration for JS",
   "license": "MIT",
-  "author": "MokiyCodes <mokiy@wafflepowered.com>",
+  "author": "YieldingCoder <yieldingc@pm.me>",
   "version": "0.1.0",
   "source": "src/index.ts",
   "main": "dist/main.js",
