@@ -18,3 +18,16 @@ export class OutOfBoundsException extends Error {
     this.name = 'OutOfBoundsException';
   }
 }
+export class SecurityException extends Error {
+  constructor(message?: string) {
+    super(message);
+    this.name = 'SecurityException';
+  }
+}
+
+export class TypeException extends Error {
+  constructor(message?: string) {
+    super(message);
+    this.name = 'TypeException';
+  }
+}
