@@ -27,7 +27,16 @@
   "private": false,
   "targets": {
     "main": {
-      "includeNodeModules": []
+      "includeNodeModules": [],
+      "isLibrary": true
+    },
+    "util": {
+      "source": "src/util.ts",
+      "distDir": "dist/util",
+      "isLibrary": true
     }
+  },
+  "engines": {
+    "node": ">=12"
   }
 }

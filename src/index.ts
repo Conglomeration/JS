@@ -1,5 +1,15 @@
-// Some example index file
-console.log('Hello World!');
+import * as Types from './types';
 
-// Export something to ensure parcel doesn't complain for ts deffinitions
-export default null;
+export const RobloxTypes = {
+  'Vector2': Types.Vector2, 'Color3': Types.Color3, 'Nil': null
+};
+
+interface Library {
+  RbxTypes: typeof RobloxTypes;
+}
+
+// @ts-ignore let me add things to the table overtime >:(
+const exported: Library = {};
+exported.RbxTypes = RobloxTypes;
+
+export default exported;
